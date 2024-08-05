@@ -1,1 +1,21 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --font-general: 'Inter-Variable';
+  --font-accent: 'Press Start 2P', system-ui;
+  --wght-card__header: 700;
+  --wght-card__text: 400;
+  --background-color: rgba(255, 255, 255, 1);
+  --background-image: 
+  repeating-linear-gradient(0deg, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
+  repeating-linear-gradient(90deg, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
+  linear-gradient(180deg, #e7e7e7 0.01%, #1a1a1a 100%);
+  --accent-color: rgba(0, 0, 0, 1);
+  --section-width: clamp(320px, 100%, 700px);
+  --watermark-shadow-color: rgba(255, 255, 255, 1);
+  --button__text: rgba(255, 255, 255, 1);
+  --card__like-button: rgba(255, 255, 255, 1);
+  --heart-contour: rgba(0, 0, 0, 1);
+  --heart-main-body: rgba(0, 0, 0, 1);
+  --heart-core: rgba(255, 255, 255, 1);
+  --heart-sparks: rgba(255, 0, 0, 1);
+}
