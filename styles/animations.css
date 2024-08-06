@@ -42,4 +42,84 @@
   to {
     fill: var(--heart-sparks);
   }
-} 
+}
+
+/* Анимация - focus-visible */
+.card__icon-button:focus-visible {
+  border: 2px var(--accent-color) solid;
+}
+
+/* Анимация - hover */
+.card__icon-button:hover .core {
+  fill: var(--heart-main-body);
+  transition: fill 0.3s linear;
+}
+
+.card__icon-button:hover .main-body {
+  fill: var(--heart-main-body);
+  transition: fill 0.3s linear 0.05s;
+}
+
+/* Анимация - active */
+.card__icon-button:active .core {
+  fill: var(--heart-sparks);
+  transition: fill 0.3s linear;
+}
+
+.card__icon-button:active .main-body {
+  fill: var(--heart-sparks);
+  transition: fill 0.3s linear 0.05s;
+}
+
+.like-icon {
+  padding-top: 1px;
+  width: 39px;
+  height: 36px;
+}
+
+/* Анимация - is-liked */
+.like-icon.is-liked .core {
+  fill: var(--heart-sparks);
+  transition: fill 0.3s linear;
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--heart-sparks);
+  transition: fill 0.3s linear 0.05s;
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--heart-sparks);
+  transition: fill 0.3s linear 0.06s;
+}
+
+.like-icon.is-liked .heart {
+  animation: scaling 0.3s ease-in 0.1s 1 alternate;
+}
+
+.like-icon.is-liked .sparks {
+  animation: SparkColorChange 0.3s ease-in 0.3s 1 alternate;
+}
+
+/* Контур */
+.contour {
+  fill: var(--heart-contour);
+}
+
+/* Искры */
+.sparks {
+  fill: transparent;
+  transition: fill 0.1s linear;
+}
+
+/* Основное тело сердца */
+.main-body {
+  fill: transparent;
+  transition: fill 0.3s linear;
+}
+
+/* Сердцевина */
+.core {
+  fill: transparent;
+  transition: fill 0.3s linear 0.03s;
+}

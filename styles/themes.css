@@ -23,9 +23,29 @@
   --heart-main-body: rgba(0, 0, 0, 1);
 }
 
+@media (prefers-color-scheme: light) {
+  :root {
+    --wght-card__header: 700;
+    --wght-card__text: 400;
+    --background-color: rgba(255, 255, 255, 1);
+    --background-image: 
+      repeating-linear-gradient(0deg, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
+      repeating-linear-gradient(90deg, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
+      linear-gradient(180deg, #e7e7e7 0.01%, #1a1a1a 100%);
+    --accent-color: rgba(0, 0, 0, 1);
+    --section-width: clamp(320px, 100%, 700px);
+    --watermark-shadow-color: rgba(255, 255, 255, 1);
+    --button__text: rgba(255, 255, 255, 1);
+    --card__like-button: rgba(255, 255, 255, 1);
+    --heart-contour: rgba(0, 0, 0, 1);
+    --heart-core: rgba(255, 255, 255, 1);
+    --heart-main-body: rgba(0, 0, 0, 1);
+  }
+}
+
 :root.theme-dark {
-  --wght-card__header: 700;
-  --wght-card__text: 400;
+  --wght-card__header: 785;
+  --wght-card__text: 465;
   --background-color: rgba(0, 0, 0, 1);
   --background-image: 
   repeating-linear-gradient(0deg, #000, #000 2px, transparent 2px, transparent 4px),
@@ -39,4 +59,24 @@
   --heart-contour: rgba(0, 204, 20, 1);
   --heart-core: rgba(255, 255, 255, 1);
   --heart-main-body: rgba(0, 204, 20, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --wght-card__header: 785;
+    --wght-card__text: 465;
+    --background-color: rgba(0, 0, 0, 1);
+    --background-image: 
+    repeating-linear-gradient(0deg, #000, #000 2px, transparent 2px, transparent 4px),
+    repeating-linear-gradient(90deg, #000, #000 2px, transparent 2px, transparent 4px),
+    linear-gradient(180deg, #007f0c 0%, #004306 100%);
+    --accent-color: rgba(0, 204, 20, 1);
+    --section-width: clamp(320px, 100%, 700px);
+    --watermark-shadow-color: rgba(0, 0, 0, 1);
+    --button__text: rgba(0, 204, 20, 1);
+    --card__like-button: rgba(0, 204, 20, 1);
+    --heart-contour: rgba(0, 204, 20, 1);
+    --heart-core: rgba(255, 255, 255, 1);
+    --heart-main-body: rgba(0, 204, 20, 1);
+  }
 }
